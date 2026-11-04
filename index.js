@@ -28,6 +28,7 @@ const anggota = [
         kelas: "TI25E",
         nim: "20250020222"
     }
+    
 ];
 
 app.get('/', (req, res) => {
