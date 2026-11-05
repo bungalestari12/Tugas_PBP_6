@@ -14,25 +14,25 @@ const anggota = [
         nim: "20250040064"
     },
     {
-        nama: "Moch. Parhan",
+        nama: "Hary Akbar",
         kelas: "TI25E",
-        nim: "202500200119"
+        nim: "20250040093"
     },
     {
-        nama: "Ucup",
+        nama: "Indri Dwi Aprilia",
         kelas: "TI25E",
-        nim: "20250020111"
+        nim: "20250040202"
     },
     {
-        nama: "Ujang",
+        nama: "Muhamad Zidan Ramadhan",
         kelas: "TI25E",
-        nim: "20250020222"
+        nim: "20250040144"
     }
     
 ];
 
 app.get('/', (req, res) => {
-    res.send('Selamat datang di Server kelompok Bunga');
+    res.send('Selamat datang di Server kelompok 4 TI25E');
 });
 
 app.get('/info', (req, res) => {
@@ -40,7 +40,7 @@ app.get('/info', (req, res) => {
 });
 
 app.get('/anggota', (req, res) => {
-    let hasil = '<h1>Daftar Anggota Kelompok Bunga</h1>';
+    let hasil = '<h1>Daftar Anggota Kelompok Kelompok 4</h1>';
 
     anggota.forEach((data) => {
         hasil += `
