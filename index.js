@@ -1,6 +1,7 @@
 
 const express = require('express');
 const app = express();
+const port = 8000;
 
 const waktuServer = new Date().toLocaleString('id-ID', {
     dateStyle: 'full',
@@ -55,6 +56,6 @@ app.get('/anggota', (req, res) => {
     res.send(hasil);
 });
 
-app.listen(8000, () => {
-    console.log('Server berjalan di http://localhost:8000');
+app.listen(port, () => {
+    console.log(`Server berjalan di http://localhost:${port}`);
 });
